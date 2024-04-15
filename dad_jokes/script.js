@@ -1,3 +1,9 @@
+const toggleNav = document.getElementById('toggle_nav')
+const nav = document.getElementById('nav')
+toggleNav.addEventListener('click', () => nav.classList.toggle('nav-active'))
+
+
+
 const jokesEl = document.getElementById('joke')
 const jokeBtn = document.getElementById('joke-btn')
 

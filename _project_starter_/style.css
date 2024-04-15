@@ -11,26 +11,26 @@ body {
   align-items: center;
   justify-content: center; */
   /* height: 100vh; */
-  /* overflow: hidden; */
-  /* margin: 0; */
+  overflow: hidden;
+  margin: 0;
 }
 
 nav {
   position: fixed;
   top: 20px;
   left: 20px;
-  background-color: white;
+  background-color: rgb(214, 245, 245);
   padding: 20px;
   width: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 3px;
+  border-radius: 30px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   transition: width 0.6s linear;
 }
 
-nav.active {
+nav.nav-active {
   width: 350px;
 }
 
@@ -43,7 +43,7 @@ nav ul {
   transition: width 0.6s linear;
 }
 
-nav.active ul {
+nav.nav-active ul {
   width: 100%;
 }
 
@@ -53,20 +53,34 @@ nav ul li {
   transition: transform 0.6s linear, opacity 0.3s linear;
 }
 
-nav.active ul li {
+nav ul li a:active {
+  transform: scale(0.85);
+}
+
+nav ul li a:hover {
+  opacity: 0.6;
+}
+
+nav.nav-active ul li {
   opacity: 1;
   transform: rotateY(360deg);
 }
 
 nav ul a {
+  display: flex;
+  /* flex-wrap: nowrap; */
   position: relative;
   color: black;
   text-decoration: none;
-  margin: 10px;
+  margin: 0px 10px;
 }
 
-.icon {
-  background-color: white;
+nav ul a i {
+  margin: 0px 5px;
+}
+
+.icon-nav {
+  background-color: rgb(214, 245, 245);
   border: 0;
   cursor: pointer;
   padding: 0;
@@ -75,31 +89,31 @@ nav ul a {
   width: 30px;
 }
 
-.icon:focus {
+.icon-nav:focus {
   outline: 0;
 }
 
-.icon .line {
-  background-color: #5290f9;
-  height: 2px;
+.icon-nav .line {
+  background-color: #3c80f5;
+  height: 3px;
   width: 20px;
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 5px;
   transition: transform 0.6s linear;
 }
 
-.icon .line2 {
+.icon-nav .line2 {
   top: auto;
-  bottom: 10px;
+  bottom: 8px;
 }
 
-nav.active .icon .line1 {
-  transform: rotate(-765deg) translateY(5.5px);
+nav.nav-active .icon-nav .line1 {
+  transform: rotate(-765deg) translateY(7.7px);
 }
 
-nav.active .icon .line2 {
-  transform: rotate(765deg) translateY(-5.5px);
+nav.nav-active .icon-nav .line2 {
+  transform: rotate(765deg) translateY(-7.7px);
 }
 
 .inside-content {
@@ -109,6 +123,6 @@ nav.active .icon .line2 {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  /* overflow: hidden; */
+  /* overflow: hidden;    */   /* Change overflow inside the body tag up there*/
   margin: 0;
 }

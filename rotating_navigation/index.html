@@ -8,34 +8,56 @@
     <title>Rotating Navigation</title>
 </head>
 <body>
-    <div class="container">
-        <div class="circle-container">
-            <div class="circle">
-                <button id="close">
-                    <i class="fas fa-times"></i>
-                </button>
-                <button id="open">
-                    <i class="fas fa-bars"></i>
-                </button>
+
+
+    <nav class="nav-active" id="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="https://github.com/nickylivardo/funprojects/tree/main/rotating_navigation">Code <i class="fa-solid fa-code"></i></a>
+          </li>
+          <li><a href="/progress_steps/">Back</a></li>
+          <li><a href="/hidden_search/">Next</a></li>
+        </ul>
+        <button class="icon-nav" id="toggle_nav">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+        </button>
+      </nav>
+  
+      <div class="inside-content">
+        <div class="container">
+            <div class="circle-container">
+                <div class="circle">
+                    <button id="close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button id="open">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="content">
+                <h1>Amazing Article</h1>
+                <small>Muhammad Annafri</small>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus, expedita, vitae laboriosam quod suscipit, dicta optio dolor id repellat blanditiis ad. Iste velit minus eaque officia labore neque ducimus deserunt vel? Quos suscipit blanditiis reiciendis quam nobis deleniti totam inventore iure accusantium voluptatum? Doloremque et culpa quam deserunt illo ullam? Sequi maxime vero fugit sed ut amet magni repellendus! Debitis dolores sed saepe, amet est ad distinctio quae incidunt expedita quam ab iusto consequatur eos recusandae, nemo quas. Tempore fugiat quibusdam, beatae at repellat architecto dolores, sed vel officia delectus qui libero unde sunt esse dignissimos cum illum ut.</p>
+                <h3>My Dream House</h3>
+                <img src="https://images.unsplash.com/photo-1543731068-7e0f5beff43a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam magnam eaque error architecto quidem, cupiditate vel rerum voluptates, dolor consequatur corrupti unde iure! Maiores modi, eius optio iste sed consectetur velit vero quaerat. Amet recusandae possimus tempora minima aspernatur, obcaecati mollitia dolorem laudantium maiores ut impedit optio explicabo, doloremque iste nisi, rem sapiente. Accusamus nemo ipsa molestias reiciendis, rerum quasi architecto necessitatibus aperiam est consequatur ad itaque sed impedit dolorum facilis ullam deleniti earum expedita.</p>
             </div>
         </div>
-        <div class="content">
-            <h1>Amazing Article</h1>
-            <small>Muhammad Annafri</small>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet natus, expedita, vitae laboriosam quod suscipit, dicta optio dolor id repellat blanditiis ad. Iste velit minus eaque officia labore neque ducimus deserunt vel? Quos suscipit blanditiis reiciendis quam nobis deleniti totam inventore iure accusantium voluptatum? Doloremque et culpa quam deserunt illo ullam? Sequi maxime vero fugit sed ut amet magni repellendus! Debitis dolores sed saepe, amet est ad distinctio quae incidunt expedita quam ab iusto consequatur eos recusandae, nemo quas. Tempore fugiat quibusdam, beatae at repellat architecto dolores, sed vel officia delectus qui libero unde sunt esse dignissimos cum illum ut.</p>
-            <h3>My Dream House</h3>
-            <img src="https://images.unsplash.com/photo-1543731068-7e0f5beff43a?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam magnam eaque error architecto quidem, cupiditate vel rerum voluptates, dolor consequatur corrupti unde iure! Maiores modi, eius optio iste sed consectetur velit vero quaerat. Amet recusandae possimus tempora minima aspernatur, obcaecati mollitia dolorem laudantium maiores ut impedit optio explicabo, doloremque iste nisi, rem sapiente. Accusamus nemo ipsa molestias reiciendis, rerum quasi architecto necessitatibus aperiam est consequatur ad itaque sed impedit dolorum facilis ullam deleniti earum expedita.</p>
-        </div>
-    </div>
+    
+        <nav class="content-nav">
+            <ul>
+                <li><i class="fas fa-home"> Home</i></li>
+                <li><i class="fas fa-user-alt"> About</i></li>
+                <li><i class="fas fa-envelope"> Contact</i></li>
+            </ul>
+        </nav>
+      </div>
 
-    <nav>
-        <ul>
-            <li><i class="fas fa-home"> Home</i></li>
-            <li><i class="fas fa-user-alt"> About</i></li>
-            <li><i class="fas fa-envelope"> Contact</i></li>
-        </ul>
-    </nav>
+
+    
 
     <script src="script.js"></script>
 </body>

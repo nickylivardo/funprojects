@@ -1,3 +1,8 @@
+const toggleNav = document.getElementById('toggle_nav')
+const nav = document.getElementById('nav')
+toggleNav.addEventListener('click', () => nav.classList.toggle('nav-active'))
+
+
 const progress = document.getElementById('progress')
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')
