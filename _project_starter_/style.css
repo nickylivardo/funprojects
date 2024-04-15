@@ -6,16 +6,19 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+  justify-content: center; */
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  /* margin: 0; */
 }
 
 nav {
+  position: fixed;
+  top: 20px;
+  left: 20px;
   background-color: white;
   padding: 20px;
   width: 80px;
@@ -97,4 +100,15 @@ nav.active .icon .line1 {
 
 nav.active .icon .line2 {
   transform: rotate(765deg) translateY(-5.5px);
+}
+
+.inside-content {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* overflow: hidden; */
+  margin: 0;
 }
